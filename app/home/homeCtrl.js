@@ -34,9 +34,9 @@ app.controller('homeCtrl', function($scope, $http, $q) {
         }
     ];
     $scope.currentUser = $scope.users[0];
-    $scope.setUser = function(user) {
-        $scope.currentUser = user;
-    }
+    $scope.setUser = function(user){
+       $scope.currentUser = user;
+   };
     $scope.getWeather = function(city) {
         var dfd = $q.defer();
          $http ({

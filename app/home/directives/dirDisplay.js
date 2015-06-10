@@ -13,7 +13,6 @@ app.directive('dirDisplay', function() {
                 scope.setUser({user: scope.user});
                 scope.$apply();
             })
-
         }
     };
 })
