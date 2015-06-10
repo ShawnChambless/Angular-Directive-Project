@@ -1,0 +1,1 @@
+var app=angular.module("directivePractice");app.directive("dirWeather",function(){return{scope:{currentUser:"=",weatherCall:"&"},templateUrl:"app/weather/directives/dirWeather.html",controller:function(e){e.$watch("currentUser",function(){e.weatherCall({city:e.currentUser.city}).then(function(r){e.weather=r.weather,e.temperature=r.temperature})})}}});

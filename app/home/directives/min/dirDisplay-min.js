@@ -1,0 +1,1 @@
+var app=angular.module("directivePractice");app.directive("dirDisplay",function(){return{templateUrl:"app/home/directives/displayTmpl.html",scope:{setUser:"&",user:"="},link:function(e,i,r){i.on("click",function(){e.show=!e.show,e.setUser({user:e.user}),e.$apply()})}}});

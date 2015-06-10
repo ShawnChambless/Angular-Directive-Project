@@ -1,0 +1,1 @@
+var app=angular.module("directivePractice",["ngRoute"]);app.config(function(e){e.when("/home",{templateUrl:"app/home/home.html",controller:"homeCtrl"}).otherwise("/home")});
